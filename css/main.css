@@ -3,6 +3,7 @@
   --primary-color: #7fad39;
   --secondary-color: #f5f5f5;
   --light-blue-color: #f3f6fa; /* footer , item-box */
+  --main-transition: 0.3s;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -43,7 +44,6 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  background-color: purple;
 }
 /* Mobile */
 @media (max-width: 767px) {
@@ -71,6 +71,108 @@ ul {
   }
 }
 /* End Container */
-header {
-  background-color: orange;
+/* Start top-header */
+.top-header {
+  padding: 15px 0;
 }
+.top-header .top-header-left {
+  gap: 3rem;
+}
+.top-header .top-header-left .email-wrapper::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  height: 100%;
+  width: 1px;
+  background-color: #3333;
+  opacity: 0.6;
+}
+.top-header .top-header-left .email-wrapper .email {
+  font-size: 1.4rem;
+}
+.top-header .top-header-left .ad {
+  font-size: 1.4rem;
+}
+.top-header .top-header-right {
+  gap: 3rem;
+}
+.top-header .top-header-right .social-icons {
+  gap: 1rem;
+}
+.top-header .top-header-right .social-icons::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  height: 100%;
+  width: 1px;
+  background-color: #3333;
+  opacity: 0.6;
+}
+.top-header .top-header-right .social-icons .icon {
+  transition: color var(--main-transition);
+}
+.top-header .top-header-right .social-icons a {
+  padding: 0 5px;
+}
+.top-header .top-header-right .social-icons a:hover .facebook {
+  color: #1877f2;
+}
+.top-header .top-header-right .social-icons a:hover .twitter {
+  color: #1da1f2;
+}
+.top-header .top-header-right .social-icons a:hover .linkedin {
+  color: #0077b5;
+}
+.top-header .top-header-right .social-icons a:hover .pinterest {
+  color: #e60023;
+}
+.top-header .top-header-right .lang-menu {
+  gap: 1rem;
+}
+.top-header .top-header-right .lang-menu::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  height: 100%;
+  width: 1px;
+  background-color: #3333;
+  opacity: 0.6;
+}
+.top-header .top-header-right .lang-menu .lang {
+  gap: 0.5rem;
+}
+.top-header .top-header-right .lang-menu .lang .current-lang,
+.top-header .top-header-right .lang-menu .lang .icon {
+  font-size: 1.4rem;
+}
+.top-header .top-header-right .lang-menu .lang-list {
+  top: calc(100% + 20px);
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  visibility: hidden;
+  transition: top var(--main-transition);
+}
+.top-header .top-header-right .lang-menu:hover .lang-list{
+  top: 105%;
+  visibility: visible;
+}
+.top-header .top-header-right .lang-menu .lang-list li:first-child {
+  margin-bottom: 5px;
+}
+.top-header .top-header-right .lang-menu .lang-list li a {
+  padding-left: 5px;
+  color: white;
+  transition: padding var(--main-transition);
+}
+.top-header .top-header-right .lang-menu .lang-list li a:hover {
+  padding-left: 10px;
+  color: var(--primary-color);
+}
+.top-header .top-header-right .login {
+  gap: 0.6rem;
+}
+.top-header .top-header-right .login span {
+  font-size: 1.4rem;
+}
+/* End top-header */
