@@ -73,7 +73,7 @@ ul {
 /* End Container */
 /* Start top-header */
 .top-header {
-  padding: 15px 0;
+  padding: 1.5rem 0;
 }
 .top-header .top-header-left {
   gap: 3rem;
@@ -146,6 +146,7 @@ ul {
   font-size: 1.4rem;
 }
 .top-header .top-header-right .lang-menu .lang-list {
+  z-index: 999;
   top: calc(100% + 20px);
   width: 100%;
   background-color: black;
@@ -153,11 +154,11 @@ ul {
   visibility: hidden;
   transition: top var(--main-transition);
 }
-.top-header .top-header-right .lang-menu:hover .lang-list{
+.top-header .top-header-right .lang-menu:hover .lang-list {
   top: 105%;
   visibility: visible;
 }
-.top-header .top-header-right .lang-menu .lang-list li:first-child {
+.top-header .top-header-right .lang-menu .lang-list li:not(:last-child) {
   margin-bottom: 5px;
 }
 .top-header .top-header-right .lang-menu .lang-list li a {
@@ -176,3 +177,74 @@ ul {
   font-size: 1.4rem;
 }
 /* End top-header */
+/* Start Main header */
+.main-header {
+  padding: 1.6rem 0;
+}
+.main-header nav .main-links {
+  gap: 5rem;
+}
+.main-header nav .main-links > li > a {
+  color: black;
+  font-weight: 900;
+  transition: var(--main-transition);
+  letter-spacing: 1px;
+}
+.main-header nav .main-links > li > a:hover,
+.main-header nav .main-links > li a.active {
+  color: #7fad39;
+}
+.main-header nav .main-links .pages-menu > .drop-down-menu {
+  z-index: 999;
+  top: calc(100% + 20px);
+  width: 180px;
+  background-color: black;
+  visibility: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: top var(--main-transition);
+}
+.main-header nav .main-links .pages-menu > .drop-down-menu li > a {
+  display: block;
+  padding: 5px 15px;
+  color: white;
+  transition: var(--main-transition);
+}
+.main-header nav .main-links .pages-menu > .drop-down-menu li > a:hover {
+  color: #7fad39;
+}
+.main-header nav .main-links .pages-menu:hover > a {
+  color: #7fad39;
+}
+.main-header nav .main-links .pages-menu:hover .drop-down-menu {
+  top: 103%;
+  visibility: visible;
+}
+.main-header .main-header-right-wrapper .wishlist {
+  gap: 3rem;
+
+}
+.main-header .main-header-right-wrapper .wishlist-left-wrapper {
+  gap: 1.5rem;
+}
+.main-header
+  .main-header-right-wrapper
+  .wishlist-left-wrapper
+  .icon-wrapper
+  .count {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    font-size: 1rem;
+    padding: 7px;
+    font-weight: bold;
+    color: white;
+    top: -6px;
+    right: -13px;
+}
+.main-header .main-header-right-wrapper .wishlist-right-wrapper > span .price {
+  font-weight: bold;
+  margin-left: 5px;
+}
+/* End Main header */
