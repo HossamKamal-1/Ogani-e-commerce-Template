@@ -331,7 +331,6 @@ ul {
 @media (max-width: 767px) {
   .departments .container {
     flex-direction: column;
-    align-items: normal;
   }
 }
 .departments .departments-left-wrapper {
@@ -393,18 +392,13 @@ ul {
 .categories-right-wrapper {
 }
 .categories-right-wrapper .content {
-  gap: 4.5rem;
-}
-@media (max-width: 991px) {
-  .categories-right-wrapper .content {
-    gap: 1.5rem;
-}
+  gap: 1.5rem;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   .categories-right-wrapper .content {
     flex-direction: column;
     align-items: normal;
-    
   }
 }
 .categories-right-wrapper .content .search-categories {
@@ -457,6 +451,7 @@ ul {
 .categories-right-wrapper .content .contact {
   flex: 1;
   gap: 2rem;
+  justify-content: flex-end;
 }
 @media (max-width: 767px) {
   .categories-right-wrapper .content .contact {
@@ -481,5 +476,56 @@ ul {
 .categories-right-wrapper .content .contact .text span:last-child {
   color: #6f6f6f;
   font-size: 1.6rem;
+}
+.categories-right-wrapper .hero {
+  height: 420px;
+  background-image: url(../images/hero/banner.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+@media (max-width: 767px) {
+  .categories-right-wrapper .hero {
+    height: 320px;
+  }
+}
+.categories-right-wrapper .hero .hero-text {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+.categories-right-wrapper .hero .hero-text >span {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.categories-right-wrapper .hero .hero-text >h2 {
+  font-size: 5rem;
+    max-width: 300px;
+    font-weight: 900;
+}
+@media (max-width: 767px) {
+  .categories-right-wrapper .hero .hero-text >h2 {
+    font-size: 4rem;
+  }
+}
+.categories-right-wrapper .hero .hero-text >p {
+  margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #6f6f6f;
+}
+.categories-right-wrapper .hero .hero-text >a {
+  background-color: #7fad39;
+  color: white;
+  font-weight: 900;
+  padding: 15px 40px;
+  display: block;
+  width: fit-content;
+  transition: var(--main-transition);
+
+}
+.categories-right-wrapper .hero .hero-text >a:hover {
+  color: black;
+  background-color: #1877f2;
 }
 /* End Categories */
