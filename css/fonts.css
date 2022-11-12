@@ -25,5 +25,5 @@
 @font-face {
   font-family: "Cairo";
   src: url(../fonts/Cairo/static/Cairo-ExtraBold.ttf) format("truetype");
-  font-weight: 800; /* Extrabold */
+  font-weight: 900; /* Extrabold */
 }
