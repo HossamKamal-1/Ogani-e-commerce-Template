@@ -708,6 +708,7 @@ ul {
 }
 .featured-products .container ul li a {
   color: black;
+  font-size: 1.8rem;
 }
 .featured-products .container ul li.active {
   border-bottom-color: var(--primary-color);
@@ -724,5 +725,56 @@ ul {
 .featured-products .container ul li:hover::before {
   width: 100%;
 }
-
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 3rem;
+}
+.products-wrapper .product {
+}
+.products-wrapper .product .product-image{
+  overflow: hidden;
+  
+}
+.products-wrapper .product .product-image img{
+  max-width: 100%;
+  width: 100%;
+}
+.products-wrapper .product .product-image .icons{
+  gap: 2rem;
+  bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.products-wrapper .product:hover .icons {
+  bottom: 20px;
+}
+.products-wrapper .product .product-image .icons a {
+  background-color: white;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+}
+.products-wrapper .product .product-image .icons a .icon{
+  transition: var(--main-transition);
+}
+.products-wrapper .product .product-image .icons a:hover  {
+  background-color: #7fad39;
+}
+.products-wrapper .product .product-image .icons a:hover .icon {
+  color: white;
+  transform: rotate(1turn);
+}
+.products-wrapper .product .product-title {
+  margin: 10px 0;
+}
+.products-wrapper .product .price {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
 /* End Featured-products */
