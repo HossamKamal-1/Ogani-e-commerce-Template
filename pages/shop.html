@@ -189,7 +189,7 @@
     <div class="container d-flex">
       <div class="sales-left-wrapper">
         <div class=department-part>
-          <h2>Department</h2>
+          <h2 class="title">Department</h2>
           <ul class="departments-list">
             <li><a href="#">Fresh Meat</a></li>
             <li><a href="#">Vegetables</a></li>
@@ -205,19 +205,19 @@
           </ul>
         </div>
         <div class="price">
-          <h2>Price</h2>
+          <h2 class="title">Price</h2>
         </div>
         <div class="colors">
-          <h2>Colors</h2>
+          <h2 class="title">Colors</h2>
 
         </div>
-        <div>
-          <h2>Popular Size</h2>
+        <div class="popular-size-wrapper">
+          <h2 class="title">Popular Size</h2>
           <ul>
-            <li>Large</li>
-            <li>Medium</li>
-            <li>Small</li>
-            <li>Tiny</li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Medium</a></li>
+            <li><a href="#">Small</a></li>
+            <li><a href="#">Tiny</a></li>
           </ul>
         </div>
         <div class="latest-products-wrapper">
@@ -280,7 +280,7 @@
           <h2 class="title">
             sale off
           </h2>
-          <div class="discount-products">
+          <div class="products-wrapper">
             <div class="product">
               <div class="product-image p-relative">
                 <img src="../images/product/product-1.jpg" alt="" />
@@ -295,10 +295,15 @@
                     <i class="icon-shopping-cart icon"></i>
                   </a>
                 </div>
+                <div class="discount">-20%</div>
               </div>
               <div class="text txt-c">
+                <span class="depart-name">Dried Fruit</span>
                 <span class="product-title d-block">Crab Pool Security</span>
-                <span class="price d-block">$30.00</span>
+                <div>
+                  <span class="price d-block">$30.00</span>
+                  <span class="old-price">$40.00</span>
+                </div>
               </div>
             </div>
             <div class="product">
@@ -315,10 +320,15 @@
                     <i class="icon-shopping-cart icon"></i>
                   </a>
                 </div>
+                <div class="discount">-20%</div>
               </div>
               <div class="text txt-c">
+                <span class="depart-name">Dried Fruit</span>
                 <span class="product-title d-block">Crab Pool Security</span>
-                <span class="price d-block">$30.00</span>
+                <div>
+                  <span class="price d-block">$30.00</span>
+                  <span class="old-price">$40.00</span>
+                </div>
               </div>
             </div>
             <div class="product">
@@ -335,16 +345,47 @@
                     <i class="icon-shopping-cart icon"></i>
                   </a>
                 </div>
+                <div class="discount">-20%</div>
               </div>
               <div class="text txt-c">
+                <span class="depart-name">Dried Fruit</span>
                 <span class="product-title d-block">Crab Pool Security</span>
-                <span class="price d-block">$30.00</span>
+                <div>
+                  <span class="price d-block">$30.00</span>
+                  <span class="old-price">$40.00</span>
+                </div>
               </div>
             </div>
           </div>
+          <ul>
+            <li class="active"></li>
+            <li></li>
+          </ul>
         </div>
         <div class="products-search-result-wrapper">
-          <div>1</div>
+          <div class="filter between-flex">
+            <div class="sort">
+              <span>Sort By</span>
+              <span class="p-relative">
+                <span>
+                  <span class="fw-b ">Default</span>
+                  <i class="icon-angle-down ml-5"></i>
+                </span>
+                <ul class="p-absolute">
+                  <li><a href="#">Default</a></li>
+                  <li><a href="#">Default</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class="found-count">
+              <span class="fw-b mr-5">16</span>
+              <span>Products Found</span>
+            </div>
+            <div class="icons d-flex gap-15">
+              <i class="icon-th-large icon"></i>
+              <i class="icon-list-ul icon"></i>
+            </div>
+          </div>
           <div class="products-wrapper">
             <div class="product">
               <div class="product-image p-relative">
