@@ -5,3 +5,142 @@
     3- Main Footer
  */
 @import url("cssimport.css");
+/* Start breadcrumb section */
+.breadcrumb {
+  background-image: url(../images/breadcrumb.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.breadcrumb .text {
+}
+.breadcrumb .text .title {
+  font-size: 5rem;
+  font-weight: 900;
+}
+.breadcrumb .text .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.breadcrumb .text .navigation a {
+  color: inherit;
+  font-weight: 900;
+}
+.breadcrumb .text .navigation a::before {
+  position: absolute;
+  content: "-";
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/* End breadcrumb section */
+/* Start Sales section*/
+.sales {
+}
+.sales .container {
+  gap: 3rem;
+}
+.sales .container .sales-left-wrapper {
+  min-width: 260px;
+}
+.sales .container .sales-left-wrapper .latest-products-wrapper > .text {
+  margin-bottom: 40px;
+}
+.sales .container .sales-left-wrapper .latest-products-wrapper > .text .title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  > .text
+  .navigate-product {
+  gap: 1rem;
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  > .text
+  .navigate-product
+  a {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-blue-color);
+  transition: var(--main-transition);
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  > .text
+  .navigate-product
+  a:hover {
+  background-color: #1877f2;
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  > .text
+  .navigate-product
+  a
+  .icon {
+  color: black;
+  font-size: 1.8rem;
+  transition: var(--main-transition);
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  > .text
+  .navigate-product
+  a:hover
+  .icon {
+  color: white;
+}
+.sales .container .sales-left-wrapper .latest-products-wrapper .item {
+  gap: 3rem;
+}
+
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  .item
+  .item-image
+  img {
+  max-width: 100%;
+  width: 100px;
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  .item
+  .text
+  .title {
+  margin-bottom: 10px;
+}
+.sales
+  .container
+  .sales-left-wrapper
+  .latest-products-wrapper
+  .item
+  .text
+  .price {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+/* End Sales section */
