@@ -518,4 +518,23 @@
   font-size: 1.8rem;
   font-weight: 900;
 }
+.sales .container .sales-right-wrapper .browse-buttons .browse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  color: gray;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: var(--main-transition) ease-out;
+}
+.sales .container .sales-right-wrapper .browse-buttons .browse-button .icon {
+  color: inherit;
+}
+.sales .container .sales-right-wrapper .browse-buttons .browse-button:hover {
+  background-color: #1877f2;
+  color: white;
+}
 /* End Sales section */

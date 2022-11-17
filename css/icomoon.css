@@ -25,6 +25,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
 .icon-th-large:before {
   content: "\f009";
 }
