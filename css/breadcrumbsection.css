@@ -1,0 +1,42 @@
+/* Start breadcrumb section */
+.breadcrumb {
+  background-image: url(../images/breadcrumb.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.breadcrumb .text {
+}
+.breadcrumb .text .title {
+  font-size: 5rem;
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  .breadcrumb .text .title {
+    font-size: 4rem;
+  }
+}
+.breadcrumb .text .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.breadcrumb .text .navigation a {
+  color: inherit;
+  font-weight: 900;
+}
+.breadcrumb .text .navigation a::before {
+  position: absolute;
+  content: "-";
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/* End breadcrumb section */
