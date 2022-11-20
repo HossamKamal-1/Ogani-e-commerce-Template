@@ -25,6 +25,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-star:before {
+  content: "\f005";
+}
+.icon-star-half-empty:before {
+  content: "\f123";
+}
 .icon-long-arrow-right:before {
   content: "\f178";
 }
