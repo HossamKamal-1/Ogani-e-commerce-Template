@@ -17,7 +17,8 @@
 }
 @media (max-width: 767px) {
   .breadcrumb .text .title {
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 .breadcrumb .text .navigation {
@@ -30,6 +31,17 @@
 .breadcrumb .text .navigation a {
   color: inherit;
   font-weight: 900;
+  font-size: 1.4rem;
+}
+.breadcrumb .text .navigation span {
+  font-size: 1.4rem;
+}
+@media (min-width: 992px) {
+  .breadcrumb .text .navigation a,
+  .breadcrumb .text .navigation span {
+    font-size: 1.6rem;
+  }
+
 }
 .breadcrumb .text .navigation a::before {
   position: absolute;
