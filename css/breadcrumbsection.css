@@ -13,6 +13,7 @@
 }
 .breadcrumb .text .title {
   font-size: 5rem;
+  margin-bottom: 5px;
   font-weight: 900;
 }
 @media (max-width: 767px) {
